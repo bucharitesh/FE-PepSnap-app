@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+
+* {
+  font-family: Ubuntu, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+:root {
+  --gradient-color: 113,69,156;
+}
+
+.gradient {
+  background: linear-gradient(180deg, rgba(var(--gradient-color), 1) 0%, rgba(var(--gradient-color), 0) 100%);
+}
+
+@tailwind components;
+@tailwind utilities;
